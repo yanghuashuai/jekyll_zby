@@ -1,0 +1,3 @@
+baseurl:jekyll_zby
+markdown: rdiscount
+pygments: true
