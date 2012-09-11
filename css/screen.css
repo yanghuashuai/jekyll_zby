@@ -228,3 +228,16 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+.about {
+	color: #222;	
+	text-align: center;
+	/*
+	font-style: italic;
+ 	background-image: url(../images/about.png);
+	background-repeat: 
+	no-repeat;
+	background-size: 100% 100%;"
+	*/
+}
+

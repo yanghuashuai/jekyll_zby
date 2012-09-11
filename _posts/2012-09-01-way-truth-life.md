@@ -8,7 +8,7 @@ title: 旧博初篇
 
 <p class="meta">2012-09-01</p>
 
-去年曾在<a href="http://aws.amazon.com" target="_blank">AWS</a>上面用[wordpress](http://www.wordpress.org)搭了一个博客，这是当时的初篇：
+去年曾在<a href="http://aws.amazon.com" target="_blank">AWS</a>上面用<a href="http://www.wordpress.org" target="_blank">wordpress</a>搭了一个博客，这是当时的初篇：
 >**hello, world**  
 >
 >2011-11-11  
@@ -23,7 +23,7 @@ title: 旧博初篇
 >
 >许多的事情，只有回过头再看时，才能体会到第一步的分量，而心存感激；也有一些事情，到末了，没有机会回头，或不堪回头。无论如何，这第一步，都该深埋一个脚印，发不发芽，皆当安之若素。
 
-将近一年过去了，不想竟然是“不堪回头”。[AWS](http://aws.amazon.com)的一年免费试用期快到了，现在用[jekyll](http://www.jekyllrb.com)重新搭建了一个静态博客，希望能将精力集中在内容上面。
+将近一年过去了，不想竟然是“不堪回头”。<a href="http://aws.amazon.com" target="_blank">AWS</a>的一年免费试用期快到了，现在用<a href="http://www.jekyllrb.com" target="_blank">jekyll</a>重新搭建了一个静态博客，希望能将精力集中在内容上面。
 
 现在引用旧约《圣咏》一二六篇，作为新博客的开篇，算是祝福吧  
 > 上主带领俘虏回到熙雍，我们觉得彷佛是在梦中；  
