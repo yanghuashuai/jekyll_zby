@@ -1,5 +1,14 @@
 ---
 layout: post
+title: 不终场，不退场
+modified: 2014-10-02
+tags: [译]
+image:
+  feature: abstract-3.jpg
+  credit: dargadgetz
+  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+comments: true
+share: true
 ---
 
 *(本文是著名博客[Coding Horror]的作者Jeff Atwood为纪念Aaron Swartz所写，原文发表于2013年1月21日)*
