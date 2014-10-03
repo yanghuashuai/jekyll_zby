@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Ubuntu 安装 ar8161 声卡驱动
-modified: 2014-10-02
-tags: [手记,ubuntu]
+title: Ubuntu 安装 ar8161 网卡驱动
+categories: note
+modified: 2014-10-03
+tags: [笔记,ubuntu]
 image:
   feature: abstract-3.jpg
   credit: dargadgetz
@@ -13,11 +14,11 @@ share: true
 
 7月份时候，下决心花了3.5K银子装了一台能入流的主机，兴冲冲的安装上了[Ubuntu Server 12.04 LTS], 却发现因为主板上的网卡芯片（AR8161）太新，驱动还没测试稳定，尚未加入内核。还好搜到了解决的办法：编译[compat-wireless]的源码包。当时网上相关的文档还比较少，现在已经好找多了。算是翻译把。
 
-**1. 在无网络的情况下，安装编译环境 build-essential**  
+###1. 在无网络的情况下，安装编译环境 build-essential   
 
-参考上一篇文章[Ubuntu 平台离线安装软件包, 以安装 build-essential 为例]
+参考上一篇文章[Ubuntu 平台离线安装软件包]
 
-**2. 编译安装 alx**
+###2. 编译安装 alx
 
 下载并解压compat-wireless的源码包, 进入解压后的目录：
 
@@ -51,6 +52,6 @@ ifconfig -a
 
 [Ubuntu Server 12.04 LTS]:http://www.ubuntu.com/download/server
 [compat-wireless]:http://linuxwireless.org/download/compat-wireless-2.6
-[Ubuntu离线安装软件包]:http://blog.zhibeiyou.net/2012/10/31/Ubuntu离线安装软件包.html
+[Ubuntu 平台离线安装软件包]:/blog/note/Ubuntu-offline-install-package
 
 

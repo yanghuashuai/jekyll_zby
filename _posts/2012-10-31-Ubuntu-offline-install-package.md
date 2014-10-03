@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Ubuntu 离线安装软件包
-modified: 2014-10-02
-tags: [手记]
+categories: note
+modified: 2014-10-03
+tags: [笔记,ubuntu,Tech]
 image:
   feature: abstract-3.jpg
   credit: dargadgetz
@@ -13,22 +14,22 @@ share: true
 
 **基本原理**  
 
-#### apt-get install 的 --print-uris 选项可以打印出包依赖列表：
+apt-get install 的 --print-uris 选项可以打印出包依赖列表：
 
  > **--print-uris**  
  > Instead of fetching the files to install their URIs are printed. Each URI will have the path, the destination file name, the size and the expected md5 hash.
 
-#### apt-get install 会优先检查本地缓存目录 /var/cache/apt/archives/ ，如果这个目录存在依赖列表中的软件包，且版本一致，则不会再尝试通过网络下载。
+apt-get install 会优先检查本地缓存目录 /var/cache/apt/archives/ ，如果这个目录存在依赖列表中的软件包，且版本一致，则不会再尝试通过网络下载。
 
 **基本操作**   
 
-#### 打印所有依赖包的URI列表。
+打印所有依赖包的URI列表：
 
 {% highlight bash %}
  sudo apt-get install --print-uris -y build-essential | grep deb 
 {% endhighlight %}
 
-#### 截取其中的路径和文件名，整理成一个列表文件, 保存为一个文件(例如：uris.lst)：
+截取其中的路径和文件名，整理成一个列表文件, 保存为一个文件(例如：uris.lst)：
 
 {% highlight bash %}
 /pool/main/g/gcc-4.6/libgomp1_4.6.3-1ubuntu5_amd64.deb  
@@ -58,7 +59,7 @@ share: true
 /pool/main/l/linux/linux-libc-dev_3.2.0-29.46_amd64.deb  
 {% endhighlight %}
 
-#### 将这个uris.lst文件拷贝到一个联网的机器上面，选择一个合适的ubuntu源，下载这些deb包（有多种下载方式, 下面是一个示例脚本）：
+将这个uris.lst文件拷贝到一个联网的机器上面，选择一个合适的ubuntu源，下载这些deb包（有多种下载方式, 下面是一个示例脚本）：
 
 {% highlight bash %} 
 cat uris.lst | while read uri
@@ -67,11 +68,11 @@ do
 done
 {% endhighlight %}
 
-#### 将下载的这些deb包拷贝到目标机器的/var/cache/apt/archives目录下面，执行安装命令：
+将下载的这些deb包拷贝到目标机器的/var/cache/apt/archives目录下面，执行安装命令：
 
 {% highlight bash %}
  sudo apt-get install build-essential
 {% endhighlight %}
 
-#### 完成安装
+完成安装。
 
