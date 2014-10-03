@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 不终场，不退场
-modified: 2014-10-02
-tags: [译]
+categories: article
+modified: 2014-03-04
+tags: [译,生涯]
 image:
   feature: abstract-3.jpg
   credit: dargadgetz

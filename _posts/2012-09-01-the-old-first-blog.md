@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 旧博初篇
+categories: life
 description: "第一个独立博客的第一篇文章"
-modified: 2014-10-02
-tags: [感]
+modified: 2012-09-01
+tags: [旧物,生活]
 image:
   feature: abstract-3.jpg
   credit: dargadgetz
