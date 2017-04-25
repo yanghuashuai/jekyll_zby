@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'Signika';
+  src: url(Signika.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'DroidSansMono';
+  src: url(DroidSansMono.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'foundation-icons';
+  src: url('foundation-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.print-only {
+    display: none;
+}
+
+body {
+    color: Black;
+    background-color: White;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: DarkSlateBlue;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid BlanchedAlmond;
+    box-shadow: 0 0 10px DarkGray;
+    background-color: Beige;
+}
+
+header > div.container {
+    position: relative;
+    margin: 0.5rem auto;
+    padding: 0;
+    height: 4rem;
+    max-width: 700px;
+}
+
+header div.portrait {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    background-image: url(/img/avatar.jpg);
+    background-size: 100% 100%;
+}
+
+header .container > h1,
+header .container > h2 {
+    line-height: 1;
+    padding: 0;
+    position: static;
+    display: block;
+    margin: 0 0 0 4.5rem;
+}
+
+header .container h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 1.4rem;
+}
+
+header .container h2 {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0.4rem;
+}
+
+header h2 {
+    font-size: 18px;
+}
+
+header nav {
+    box-sizing: border-box;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    width: 22rem;
+    line-height: 1;
+    text-align: right;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    height: 1.5rem;
+    width: 7rem;
+    text-align: left;
+}
+
+header nav .index:before {
+    font-family: 'foundation-icons';
+    content: '\f169';
+    margin-right: 0.3em;
+}
+
+header nav .tags:before {
+    font-family: 'foundation-icons';
+    content: '\f19d';
+    margin-right: 0.3em;
+}
+
+header nav .github:before {
+    font-family: 'foundation-icons';
+    content: '\f1c9';
+    margin-right: 0.3em;
+}
+
+header nav .lofter:before {
+    font-family: 'foundation-icons';
+    content: '\f125';
+    margin-right: 0.3em;
+}
+
+header nav .home:before {
+    font-family: 'foundation-icons';
+    content: '\f15a';
+    margin-right: 0.3em;
+}
+
+/* Articles */
+
+main {
+    display: block;
+    margin: 7rem auto 0 auto;
+    max-width: 700px;
+    text-align: justify;
+
+    color: rgba(0,0,0,.8);
+    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main a:visited {
+    color: DarkMagenta;
+}
+
+main article > h2 a:visited {
+    /* Don't change title color. */
+    color: DarkSlateBlue;
+}
+
+main article h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0.5em 0;
+}
+
+main article h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main article > time {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: DimGray;
+}
+
+main article > time:before {
+    font-family: 'foundation-icons';
+    content: '\f124'
+}
+
+main article p {
+    margin: 0.75em 0;
+}
+
+main article p a {
+    text-decoration: underline;
+}
+
+main article ul li {
+    list-style-type: disc;
+    margin-left: 0.25em;
+}
+
+main article s {
+    color: DimGray;
+}
+
+main article img,
+main article video,
+main article svg {
+    display: block;
+    margin: 0.5em auto;
+    max-width: 100%;
+}
+
+main article code {
+    font-size: 15px;
+    font-family: DroidSansMono, monospace;
+}
+
+main article pre {
+    margin: 0 1em;
+    padding: 0.5em 0 0.5em 1em;
+    line-height: 1.1;
+    background: FloralWhite;
+    border: 1px dotted LightGray;
+}
+
+main article blockquote {
+    margin: 0 1em;
+    padding: 0 1em;
+    border: 1px dashed LightGray;
+    background-color: FloralWhite;
+}
+
+article .download {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+main article .abstract {
+    font-style: italic;
+}
+
+main article ul.tags li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.25em;
+}
+
+main article ul.tags {
+    display: block;
+    text-align: right;
+}
+
+main article ul.tags:before {
+    content: 'tags ['
+}
+
+main article ul.tags:after {
+    content: ']'
+}
+
+.load-comments {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    padding: 0.25rem 0px;
+    width: 75%;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.load-comments:hover {
+    color: #aaf;
+}
+
+.load-comments:active {
+    color: #faa;
+}
+
+#disqus_thread {
+    margin-top: 2em;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+article.many:after,
+article.single nav:before {
+    display: block;
+    content: '';
+    border-bottom: 2px solid LightGray;
+    width: 75%;
+    margin: auto;
+    height: 1px;
+    margin-top: 1em;
+}
+
+/* Article Navigation */
+
+article nav {
+    position: relative;
+    height: 4em;
+    line-height: 4em;
+}
+
+article nav a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+article nav .prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 4em;
+    text-align: left;
+}
+
+article nav .prev a {
+    margin-left: 1.5em;
+}
+
+article nav .next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 4em;
+    text-align: right;
+}
+
+article nav .next a {
+    margin-right: 1em;
+}
+
+article nav .marker {
+    display: inline-block;
+    height: 4em;
+    line-height: 4em;
+    margin-left: 0.5em;
+}
+
+article nav .prev .marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+article nav .next .marker {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: Gray;
+    max-width: 400px;
+    margin: 0.5em auto 1em auto;
+}
+
+/* Post listings */
+
+article .post-list time {
+    display: inline-block;
+    color: DimGray;
+    margin-right: 0.5em;
+}
+
+article .post-list li {
+    list-style-type: none;
+}
+
+article .post-count {
+    font-weight: bold;
+}
+
+article.tag a.feed {
+    display: inline-block;
+    background-image: url(/img/feed.png);
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    background-position: 0 0;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -15%;
+}
+
+/* Miscellaneous */
+
+main article .resetable {
+    cursor: pointer;
+}

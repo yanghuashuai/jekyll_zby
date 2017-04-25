@@ -1,0 +1,9 @@
+permalink: /blog/:year/:month/:day/
+markdown: kramdown
+highlighter: rouge
+timezone: GMT
+safe: true
+
+url: http://blog.zhibeiyou.net
+title: 知北游
+description: 一个写代码的农民
