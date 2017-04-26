@@ -60,7 +60,7 @@ header div.portrait {
     top: 0;
     width: 4rem;
     height: 4rem;
-    border-radius: 5px;
+    border-radius: 10px;
     background-image: url(/assets/img/avatar.jpg);
     background-size: 100% 100%;
 }
@@ -69,7 +69,7 @@ header .container > h1,
 header .container > h2 {
     line-height: 1;
     padding: 0;
-    position: static;
+    position: absolute;
     display: block;
     margin: 0 0 0 4.5rem;
 }
@@ -77,12 +77,15 @@ header .container > h2 {
 header .container h1 {
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 1.4rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.5rem;
 }
 
 header .container h2 {
     font-weight: bold;
     font-size: 12px;
+    color: dimgray;
+    margin-top: 2.8rem;
     margin-bottom: 0.4rem;
 }
 
