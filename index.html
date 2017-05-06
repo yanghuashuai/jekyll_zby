@@ -2,14 +2,14 @@
 layout: default
 ---
 
-{% for post in site.posts limit: 8 %}
+{% for post in site.posts limit: 3 %}
 <article class="many">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
     {{ post.date | date: "%B %d, %Y" }}
   </time>
   <div class="print-only url">
-    zhibeiyou.net{{post.url}}
+    blog.zhibeiyou.net{{post.url}}
   </div>
 
   {{ post.content }}

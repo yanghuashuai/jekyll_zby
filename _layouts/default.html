@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
   <head>
     <title>
-      {% if page.title %}{{ page.title }} &laquo; {% endif %}知北游
+      {% if page.title %}{{ page.title }} | {% endif %}知北游
     </title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <link rel="alternate" type="application/atom+xml" href="/feed/"/>
     <link rel="stylesheet" href="/assets/css/full.css"/>
   </head>
   <body>
-
-    <main>
-    {{ content }}
-    </main>
-
     <header>
       <div class="container">
-        <div class="portrait"></div>
+        <div class="avatar"></div>
         <h1><a href="/">知北游</a></h1>
         <h2><i>一个写代码的农民</i></h2>
         <nav>
@@ -31,12 +25,13 @@
       </div>
     </header>
 
+    <main>
+    {{ content }}
+    </main>
+
     <footer>
-      <p>
-        All information on this blog, unless otherwise noted, is
-        hereby released into the public domain, with no rights
-        reserved.
-      </p>
+      <p>除非另有声明，本网站采用<a href="http://creativecommons.org/licenses/by/3.0/cn/" rel="license">知识共享“署名 3.0 中国大陆”许可协议</a>授权。</p>
+      <img src="/assets/img/cc.png"/>
     </footer>
   </body>
 </html>

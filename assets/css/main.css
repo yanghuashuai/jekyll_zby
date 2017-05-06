@@ -54,7 +54,7 @@ header > div.container {
     max-width: 700px;
 }
 
-header div.portrait {
+header div.avatar {
     position: absolute;
     left: 0;
     top: 0;
@@ -373,18 +373,16 @@ article nav .next .marker {
 }
 
 /* Footer */
-
 footer {
     display: block;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: Gray;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0.5em auto 1em auto;
 }
 
 /* Post listings */
-
 article .post-list time {
     display: inline-block;
     color: DimGray;
